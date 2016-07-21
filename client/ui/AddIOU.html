@@ -1,0 +1,9 @@
+<template name="AddIOU">
+  {{> NewIOU}}
+</template>
+
+<template name="NewIOU">
+  <div class="item-content">
+    {{> quickForm collection='IOU' id='insertIOUForm' type='method' meteormethod='insertIOU' class='item-input' }}
+  </div>
+</template>

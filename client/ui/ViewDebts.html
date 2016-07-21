@@ -1,0 +1,14 @@
+<template name="ViewDebts">
+  <h2>List of Debts</h2>
+    <div class="content-block">
+      <ul>
+        {{#each debts}}
+        {{> debt}}
+        {{/each}}
+      </ul>
+    </div>
+</template>
+
+<template name="debt">
+  <li>{{reason}} -- {{amount}}</li>
+</template>

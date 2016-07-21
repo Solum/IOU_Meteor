@@ -1,0 +1,14 @@
+<template name="ViewCredits">
+  <h2>List of Credits</h2>
+    <div class="content-block">
+      <ul>
+        {{#each crdits}}
+        {{> credit}}
+        {{/each}}
+      </ul>
+    </div>
+</template>
+
+<template name="credit">
+  <li>{{reason}} -- {{amount}}</li>
+</template>
