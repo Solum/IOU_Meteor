@@ -1,12 +1,18 @@
 <template name="ViewCredits">
-  <h2>List of Credits</h2>
-    <div class="content-block">
-      <ul>
-        {{#each crdits}}
-        {{> credit}}
-        {{/each}}
-      </ul>
+  <div data-page="home" class="page">
+    <div class="page-content">
+      <div class="content-box">
+        <h2>List of Credits</h2>
+        <p><button class="big-button">Usual Button 1</button></p>
+        <ul>
+          {{#each crdits}}
+            {{> credit}}
+          {{/each}}
+        </ul>
+        <p><a href="#" class="button">Usual Button 2</a></p>
+      </div>
     </div>
+  </div>
 </template>
 
 <template name="credit">

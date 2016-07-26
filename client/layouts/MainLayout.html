@@ -1,8 +1,29 @@
 <template name="MainLayout">
-  <header>
-     {{> loginButtons}}
-  </header>
-  <main>
-    {{> Template.dynamic template=content}}
-  </main>
+  <div class="statusbar-overlay"></div>
+  <div class="views">
+    <div class="view view-main">
+
+      <div class="navbar">
+        <div class="navbar-inner">
+          <div class="center">
+            IOU
+          </div>
+        </div>
+      </div>
+
+      <div class="pages navbar-through toolbar-through">
+        <div class="page-content">
+          <div class="content-block">
+            <header>
+              {{> loginButtons}}
+            </header>
+            <main>
+              {{> Template.dynamic template=content}}
+            </main>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
 </template>
